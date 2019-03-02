@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminMasterPage.master.cs" Inherits="adminMasterPage" %>
+
+<%@ Register assembly="DevExpress.Web.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 89px;
+        }
+        .style4
+        {
+            color: rgb(255, 255, 255);
+            background-color: #000066;
+        }
+        .style10
+        {
+            height: 34px;
+            width: 1215px;
+        }
+        .style12
+        {
+            height: 34px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 166px">
+        <asp:Panel ID="Panel1" runat="server" 
+            BackImageUrl="~/Images/sky_clouds_blue_108523_3840x2160.jpg" Height="143px">
+            <table class="style1">
+                <tr>
+                    <td class="style10">
+                        <asp:Label ID="Label1" runat="server" style="font-size: 80px; color: #FF0000" 
+                            Text="Indian"></asp:Label>
+                        <asp:Label ID="Label2" runat="server" style="font-size: 80px; color: #00FF00" 
+                            Text="Tourisum"></asp:Label>
+                        <span class="style4" 
+                            style="font-family: Merriweather, Georgia, serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
+                        &nbsp;Travel makes one modest. You see what a tiny place you occupy in the world<br />
+                        <br />
+                        <dx:ASPxMenu ID="ASPxMenu1" runat="server" EnableTheming="True" 
+                            style="margin-bottom: 0px" Theme="MaterialCompact" Width="576px">
+                            <Items>
+                                <dx:MenuItem NavigateUrl="~/addPackageDetail.aspx" Text="Add Package Detail ">
+                                </dx:MenuItem>
+                                <dx:MenuItem NavigateUrl="~/packageDetail.aspx" Text="package Detail">
+                                </dx:MenuItem>
+                                <dx:MenuItem NavigateUrl="~/bookingDetail.aspx" Text="Booking Detail">
+                                </dx:MenuItem>
+                                <dx:MenuItem NavigateUrl="~/userdetails.aspx" Text="User Detail">
+                                </dx:MenuItem>
+                            </Items>
+                        </dx:ASPxMenu>
+                        <asp:ScriptManager ID="ScriptManager2" runat="server">
+                        </asp:ScriptManager>
+                        </span>
+                    </td>
+                    <td class="style12">
+                        &nbsp;
+                        <asp:Image ID="Image1" runat="server" Height="43px" 
+                            ImageUrl="~/logos/instagram-png-instagram-png-logo-1455.png" Width="48px" />
+                        &nbsp;
+                        <asp:Image ID="Image2" runat="server" Height="40px" 
+                            ImageUrl="~/logos/twitter_PNG34.png" Width="42px" />
+                        &nbsp;<asp:Image ID="Image5" runat="server" Height="65px" 
+                            ImageUrl="~/logos/tourismofindia.png" Width="137px" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label3" runat="server" style="color: #FFFFFF"></asp:Label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="Button1" runat="server" Height="35px" onclick="Button1_Click" 
+                            style="color: #FFFFFF; background-color: #3333FF; font-family: Georgia;" 
+                            Text="LogOut" Width="88px" />
+                        <ajaxToolkit:RoundedCornersExtender ID="Button1_RoundedCornersExtender" 
+                            runat="server" BehaviorID="Button1_RoundedCornersExtender" 
+                            TargetControlID="Button1" />
+                    </td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+    </div>
+    </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+</body>
+</html>

@@ -40,7 +40,7 @@ public partial class adminpage : System.Web.UI.Page
             if (username== TextBox1.Text && password == TextBox2.Text)
             {
                 Session["admin"] = TextBox1.Text;
-               Response.Redirect("addPackageDetail.aspx");   
+               Response.Redirect("addplaces.aspx");   
             }
             else
             {

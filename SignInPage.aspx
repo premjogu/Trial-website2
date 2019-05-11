@@ -4,11 +4,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
-    .style9
+        .style9
     {
-        width: 100%;
+        width: 94%;
         margin-right: 0px;
-    }
+            height: 736px;
+        }
     .style10
     {
             text-align: center;
@@ -17,20 +18,12 @@
         {
             width: 182px;
             text-align: center;
-            height: 23px;
-        }
-        .style17
-        {
-            height: 23px;
+            height: 98px;
         }
         .style18
         {
             text-align: center;
             height: 97px;
-        }
-        .style19
-        {
-            height: 73px;
         }
         .style20
         {
@@ -53,7 +46,7 @@
         }
         .style26
         {
-            height: 23px;
+            height: 98px;
             width: 220px;
         }
         .style27
@@ -70,11 +63,6 @@
             height: 97px;
             width: 242px;
         }
-        .style32
-        {
-            height: 23px;
-            width: 242px;
-        }
         .style33
         {
             font-size: x-large;
@@ -88,13 +76,41 @@
         {
             height: 97px;
         }
+        .style42
+        {
+            width: 220px;
+            height: 45px;
+        }
+        .style43
+        {
+            width: 242px;
+            height: 45px;
+        }
+        .style46
+        {
+            height: 45px;
+            text-align: center;
+        }
+        .style49
+        {
+            height: 98px;
+            width: 242px;
+        }
+        .style50
+        {
+            height: 98px;
+        }
+        .style51
+        {
+            height: 45px;
+        }
     </style>
 </asp:Content>
 
 <asp:Content ID="Content2" runat="server" 
     contentplaceholderid="ContentPlaceHolder1">
     <asp:Panel ID="Panel3" runat="server" 
-        BackImageUrl="~/Images/pexels-photo-417351.jpeg" Height="845px">
+        BackImageUrl="~/Images/pexels-photo-417351.jpeg" Height="844px">
         <table class="style9">
             <tr>
                 <td class="style18">
@@ -115,8 +131,8 @@
                 </td>
             </tr>
             <tr>
-                <td class="style10">
-                    &nbsp;</td>
+                <td class="dx-ac">
+                    </td>
                 <td class="style29">
                     <asp:Label ID="Label19" runat="server" CssClass="style21" 
                         style="font-family: 'Sitka Small'; " Text="Full Name"></asp:Label>
@@ -130,7 +146,7 @@
                         ControlToValidate="TextBox12" CssClass="style20" ErrorMessage="*"></asp:RequiredFieldValidator>
                 </td>
                 <td>
-                    &nbsp;</td>
+                    </td>
             </tr>
             <tr>
                 <td class="style10">
@@ -175,40 +191,40 @@
             </tr>
             <tr>
                 <td class="style15">
-                    &nbsp;</td>
+                    </td>
                 <td class="style26">
                     <asp:Label ID="Label20" runat="server" CssClass="style21" 
                         style="font-family: 'Sitka Small'; " Text="Address"></asp:Label>
                 </td>
-                <td class="style32">
+                <td class="style49">
                     <asp:TextBox ID="TextBox13" runat="server" CssClass="style22" 
-                        style="margin-left: 0px"></asp:TextBox>
+                        style="margin-left: 0px" Height="76px" TextMode="MultiLine" Width="303px"></asp:TextBox>
                 </td>
-                <td class="style17">
+                <td class="style50">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" 
                         ControlToValidate="TextBox13" CssClass="style20" ErrorMessage="*"></asp:RequiredFieldValidator>
                 </td>
-                <td class="style17">
-                    &nbsp;</td>
+                <td class="style50">
+                    </td>
             </tr>
             <tr>
-                <td class="style10">
-                    &nbsp;</td>
-                <td class="style29">
+                <td class="style46">
+                    </td>
+                <td class="style42">
                     <span class="style21">
                     <asp:Label ID="Label21" runat="server" CssClass="style21" 
                         style="font-family: 'Sitka Small'; " Text="City"></asp:Label>
                     &nbsp;&nbsp;&nbsp;</span></td>
-                <td class="style34">
+                <td class="style43">
                     <asp:TextBox ID="TextBox5" runat="server" CssClass="style22" 
                         style="margin-left: 0px"></asp:TextBox>
                 </td>
-                <td>
+                <td class="style51">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" 
                         ControlToValidate="TextBox5" CssClass="style20" ErrorMessage="*"></asp:RequiredFieldValidator>
                 </td>
-                <td>
-                    &nbsp;</td>
+                <td class="style51">
+                    </td>
             </tr>
             <tr>
                 <td class="style10">
@@ -236,17 +252,14 @@
                         style="font-family: 'Sitka Small'; " Text="Country"></asp:Label>
                 </td>
                 <td class="style34">
-                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass="style22" 
-                        Height="26px" Width="152px">
-                        <asp:ListItem>India</asp:ListItem>
-                        <asp:ListItem>usa</asp:ListItem>
-                    </asp:DropDownList>
+                    <asp:TextBox ID="TextBox14" runat="server" CssClass="style22" ReadOnly="True" 
+                        style="margin-left: 0px">India</asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" 
-                        ControlToValidate="DropDownList2" ErrorMessage="*" 
+                        ControlToValidate="TextBox14" ErrorMessage="*" 
                         style="font-size: x-large; color: #FF0000"></asp:RequiredFieldValidator>
-                </td>
+                    </td>
                 <td>
                     &nbsp;</td>
             </tr>
@@ -374,9 +387,7 @@
                         TargetControlID="Button2" />
                 </td>
                 <td>
-                    <asp:ScriptManager ID="ScriptManager1" runat="server">
-                    </asp:ScriptManager>
-                </td>
+                    &nbsp;</td>
                 <td>
                     &nbsp;</td>
             </tr>

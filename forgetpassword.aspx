@@ -179,7 +179,7 @@
                 </td>
                 <td class="style17">
                     <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="201px" 
-                        style="font-size: large"></asp:TextBox>
+                        style="font-size: large" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                         ControlToValidate="TextBox2" ErrorMessage="*" 
                         style="font-weight: 700; color: #FF0000"></asp:RequiredFieldValidator>
@@ -196,7 +196,7 @@
                 </td>
                 <td class="style21">
                     <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="201px" 
-                        style="font-size: large"></asp:TextBox>
+                        style="font-size: large" TextMode="Password"></asp:TextBox>
                     <asp:CompareValidator ID="CompareValidator2" runat="server" 
                         ControlToValidate="TextBox3" ErrorMessage="Password does not match" 
                         style="color: #CC0000" ControlToCompare="TextBox2"></asp:CompareValidator>
@@ -204,9 +204,7 @@
             </tr>
             <tr>
                 <td class="style9">
-                    <asp:ScriptManager ID="ScriptManager1" runat="server">
-                    </asp:ScriptManager>
-                </td>
+                    &nbsp;</td>
                 <td class="style36">
                     &nbsp;</td>
                 <td class="style13">

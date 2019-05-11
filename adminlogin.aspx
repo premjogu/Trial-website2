@@ -76,7 +76,7 @@
                         Text="User Name"></asp:Label>
                 </td>
                 <td class="style21">
-                    <asp:TextBox ID="TextBox1" runat="server" style="font-size: medium"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" style="font-size: medium">admin</asp:TextBox>
                     &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                         ControlToValidate="TextBox1" ErrorMessage="*" Font-Bold="True" 
                         style="color: #FF0000"></asp:RequiredFieldValidator>
@@ -121,9 +121,7 @@
             </tr>
             <tr>
                 <td class="style17">
-                    <asp:ScriptManager ID="ScriptManager1" runat="server">
-                    </asp:ScriptManager>
-                </td>
+                    &nbsp;</td>
                 <td class="style22">
                     &nbsp;</td>
                 <td class="style21">

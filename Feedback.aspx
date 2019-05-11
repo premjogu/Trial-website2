@@ -80,22 +80,10 @@
             width: 583px;
             height: 21px;
         }
-        .style42
-        {
-            width: 583px;
-        }
-        .style43
-        {
-            width: 145px;
-        }
-        .style44
-        {
-            width: 319px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:Panel ID="Panel2" runat="server" Height="661px" 
+    <asp:Panel ID="Panel2" runat="server" Height="666px" 
         BackImageUrl="~/Images/562059.jpg">
     <table class="style14">
         <tr>
@@ -222,9 +210,7 @@
         </tr>
         <tr>
             <td class="style41">
-                <asp:ScriptManager ID="ScriptManager1" runat="server">
-                </asp:ScriptManager>
-            </td>
+                &nbsp;</td>
             <td class="dxflEmptyItem_MaterialCompact" colspan="2">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="Button1" runat="server" Height="37px" onclick="Button1_Click" 

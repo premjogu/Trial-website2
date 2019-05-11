@@ -6,15 +6,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head runat="server">
-    <title></title>
+    <title>Admin Page</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
         .style1
         {
             width: 100%;
-            height: 89px;
+            height: 138px;
         }
         .style4
         {
@@ -31,11 +32,15 @@
             height: 34px;
             text-align: left;
         }
+        #form1
+        {
+            height: 147px;
+        }
     </style>
 </head>
-<body>
+<body style="height: 162px">
     <form id="form1" runat="server">
-    <div style="height: 166px">
+    <div style="height: 148px">
         <asp:Panel ID="Panel1" runat="server" 
             BackImageUrl="~/Images/sky_clouds_blue_108523_3840x2160.jpg" Height="143px">
             <table class="style1">
@@ -52,13 +57,32 @@
                         <dx:ASPxMenu ID="ASPxMenu1" runat="server" EnableTheming="True" 
                             style="margin-bottom: 0px" Theme="MaterialCompact" Width="576px">
                             <Items>
-                                <dx:MenuItem NavigateUrl="~/addPackageDetail.aspx" Text="Add Package Detail ">
+                                <dx:MenuItem NavigateUrl="~/addplaces.aspx" Text="Add Place">
+                                    <Items>
+                                        <dx:MenuItem NavigateUrl="~/AddState.aspx" 
+                                            Text="Add State">
+                                        </dx:MenuItem>
+                                        <dx:MenuItem Text="Add City" NavigateUrl="~/addCity.aspx">
+                                        </dx:MenuItem>
+                                        <dx:MenuItem Text="Add Places" NavigateUrl="~/addPlaces2.aspx">
+                                        </dx:MenuItem>
+                                        <dx:MenuItem Text="Add Category" NavigateUrl="~/addCategory.aspx">
+                                        </dx:MenuItem>
+                                    </Items>
                                 </dx:MenuItem>
-                                <dx:MenuItem NavigateUrl="~/packageDetail.aspx" Text="package Detail">
+                                <dx:MenuItem NavigateUrl="~/addhoteldetail.aspx" Text="Add Hotel Detail ">
+                                    <Items>
+                                        <dx:MenuItem NavigateUrl="~/ShowhotelDetail.aspx" Text="Show Hotel Detail">
+                                        </dx:MenuItem>
+                                    </Items>
                                 </dx:MenuItem>
                                 <dx:MenuItem NavigateUrl="~/bookingDetail.aspx" Text="Booking Detail">
                                 </dx:MenuItem>
                                 <dx:MenuItem NavigateUrl="~/userdetails.aspx" Text="User Detail">
+                                </dx:MenuItem>
+                                <dx:MenuItem NavigateUrl="~/ShowUserFeedback.aspx" Text="User Feedback">
+                                </dx:MenuItem>
+                                <dx:MenuItem NavigateUrl="~/ShowUserContactUs.aspx" Text="User Contact Us">
                                 </dx:MenuItem>
                             </Items>
                         </dx:ASPxMenu>
@@ -75,8 +99,9 @@
                             ImageUrl="~/logos/twitter_PNG34.png" Width="42px" />
                         &nbsp;<asp:Image ID="Image5" runat="server" Height="65px" 
                             ImageUrl="~/logos/tourismofindia.png" Width="137px" />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label3" runat="server" style="color: #FFFFFF"></asp:Label>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Label ID="Label3" runat="server" 
+                            style="color: #FFFFFF; font-size: x-large;"></asp:Label>
+                        &nbsp;&nbsp;
                         <asp:Button ID="Button1" runat="server" Height="35px" onclick="Button1_Click" 
                             style="color: #FFFFFF; background-color: #3333FF; font-family: Georgia;" 
                             Text="LogOut" Width="88px" />
@@ -90,10 +115,11 @@
             </asp:ContentPlaceHolder>
         </asp:Panel>
     </div>
+    <br />
     </form>
     <p>
         &nbsp;</p>
     <p>
         &nbsp;</p>
-</body>
+    </body>
 </html>
